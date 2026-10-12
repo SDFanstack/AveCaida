@@ -129,7 +129,7 @@ const CSS = `  .esp-wrap { max-width: 820px; padding-bottom: 60px; }
   @media (max-width: 560px) { .mapa-esp { flex-direction: column; align-items: flex-start; } .mapa-esp svg { width: 100%; max-width: 320px; } }
   .otras { display: flex; gap: 8px; flex-wrap: wrap; }
   .otras a { text-decoration: none; background: var(--moss-soft); color: var(--primary); padding: 6px 13px; border-radius: 20px; font-size: 0.88rem; font-weight: 600; }
-  .otras a:hover, .otras a:focus-visible { background: var(--moss); color: #fff; }`;
+  .otras a:hover, .otras a:focus-visible { background: var(--primary); color: #fff; }`;
 
 function pagina(e) {
   const n = esc(e.nombre_comun);

@@ -12,8 +12,9 @@
   --ink-soft: #4A5A4F;
   --primary: #2F4A3D;
   --primary-light: #3E6152;
-  --accent: #C98A3B;
+  --accent: #9A5F17;
   --accent-soft: #F2E2C8;
+  --accent-text: #8A5412;
   --moss: #8FAE8B;
   --moss-soft: #E4EDE2;
   --line: #DFD9C8;
@@ -156,7 +157,7 @@ nav.site-nav a[aria-current="page"] { color: var(--primary); font-weight: 700; b
   font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em;
   background: var(--moss-soft); color: var(--primary); padding: 4px 9px; border-radius: 20px;
 }
-.tag.tag-urgent { background: var(--urgent-soft); color: var(--urgent); }
+.tag.tag-urgent { background: var(--urgent-soft); color: #8F3E2A; }
 .ficha-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 24px; }
 .ficha-field .mono { color: var(--ink-soft); margin-bottom: 4px; display: block; }
 .ficha-field .val { font-size: 0.95rem; color: var(--ink); }

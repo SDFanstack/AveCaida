@@ -126,15 +126,27 @@ chatForm.addEventListener('submit', async (e) => {
     });
 
     if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      throw new Error(err.error || ('Error ' + res.status));
+      const e = new Error('http');
+      e.status = res.status;
+      throw e;
     }
 
     const data = await res.json();
     addMessage('assistant', data.reply);
     history.push({ role: 'assistant', text: data.reply });
   } catch (err) {
-    addMessage('system', 'No se pudo conectar con el chat: ' + err.message + '. Mientras tanto, revisa la guía de especies o los primeros auxilios.');
+    // El mensaje sin respuesta no debe quedar en el historial
+    if (history.length && history[history.length - 1].role === 'user') history.pop();
+    const motivo = err.status === 429
+      ? 'Hoy se ha alcanzado el límite de consultas del chat.'
+      : err.status === 400 ? 'No se ha podido procesar ese mensaje; prueba a reformularlo.'
+      : 'El chat no está disponible ahora mismo.';
+    const d = document.createElement('div');
+    d.className = 'msg system';
+    d.setAttribute('role', 'alert');
+    d.innerHTML = escapeHtml(motivo) + ' Mientras tanto: <a href="emergencia.html">primeros auxilios de emergencia</a>, <a href="mapa-cras.html">buscar tu CRAS</a> o <a href="guia.html">guía de especies</a>. Si hay peligro inmediato, llama al <strong>112</strong>.';
+    chatLog.appendChild(d);
+    chatLog.scrollTop = chatLog.scrollHeight;
   } finally {
     chatInput.disabled = false;
     chatInput.focus();
