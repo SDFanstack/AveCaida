@@ -7,6 +7,29 @@ import fs from 'node:fs';
 const BASE = 'https://alaviva.pages.dev';
 const data = JSON.parse(fs.readFileSync('especies.json', 'utf8'));
 const E = data.especies;
+// Mapa de España (comunidades autónomas) generado con tools/spain-paths.json
+const MAPA = JSON.parse(fs.readFileSync('tools/spain-paths.json', 'utf8'));
+function mapaSVG(e) {
+  const dist = e.distribucion;
+  if (!dist) return '';
+  const on = new Set(dist.ccaa);
+  const nombres = dist.ccaa.map(c => MAPA.names[c]).filter(Boolean).sort((a, b) => a.localeCompare(b, 'es'));
+  const base = Object.entries(MAPA.paths).filter(([c]) => !on.has(c)).map(([, d]) => d).join('');
+  const act = Object.entries(MAPA.paths).filter(([c]) => on.has(c)).map(([, d]) => d).join('');
+  const todo = Object.keys(MAPA.paths).every(c => on.has(c));
+  const resumen = todo ? 'toda España (península, Baleares y Canarias)' : nombres.join(', ');
+  return `<figure class="mapa-esp">
+    <svg viewBox="${MAPA.viewBox.join(' ')}" role="img" aria-label="Mapa de España con las comunidades donde se encuentra: ${esc(resumen)}">
+      <path class="mapa-base" d="${base}"/>
+      <path class="mapa-on" d="${act}"/>
+    </svg>
+    <figcaption>
+      <p class="mapa-estado">${esc(dist.presencia)}</p>
+      <p class="mapa-lista"><strong>Dónde vive:</strong> ${esc(resumen)}.</p>
+      <p class="mapa-nota">Distribución aproximada por comunidades autónomas: dentro de cada una, la especie no está en todas partes. Orientativa, no sustituye a un atlas de aves.</p>
+    </figcaption>
+  </figure>`;
+}
 const IMG_VERSION = 2; // mismo valor que en guia.html (para refrescar caché de fotos)
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -96,6 +119,14 @@ const CSS = `  .esp-wrap { max-width: 820px; padding-bottom: 60px; }
   .caja.warn { background: var(--urgent-soft); }
   .caja.nota { background: var(--accent-soft); }
   .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+  .mapa-esp { display: flex; gap: 22px; align-items: center; margin: 4px 0 0; }
+  .mapa-esp svg { width: 240px; max-width: 45%; height: auto; flex: none; }
+  .mapa-base { fill: #D5DFD8; stroke: #fff; stroke-width: 1.5; stroke-linejoin: round; }
+  .mapa-on { fill: var(--accent); stroke: #fff; stroke-width: 1.5; stroke-linejoin: round; }
+  .mapa-esp figcaption p { margin-bottom: 8px; }
+  .mapa-estado { color: var(--ink); font-weight: 600; }
+  .mapa-nota { font-size: 0.82rem !important; }
+  @media (max-width: 560px) { .mapa-esp { flex-direction: column; align-items: flex-start; } .mapa-esp svg { width: 100%; max-width: 320px; } }
   .otras { display: flex; gap: 8px; flex-wrap: wrap; }
   .otras a { text-decoration: none; background: var(--moss-soft); color: var(--primary); padding: 6px 13px; border-radius: 20px; font-size: 0.88rem; font-weight: 600; }
   .otras a:hover, .otras a:focus-visible { background: var(--moss); color: #fff; }`;
@@ -189,6 +220,9 @@ ${HEADER}
   <p>${esc(e.identificacion.rasgos)}</p>
   <h2>Se puede confundir con</h2>
   <ul>${e.identificacion.confundible_con.map(c => `<li>${enlazaConfundible(c)}</li>`).join('')}</ul>
+
+  ${e.distribucion ? `<h2>Dónde la encontrarás</h2>
+  ${mapaSVG(e)}` : ''}
 
   <h2>Alimentación de urgencia</h2>
   <p>Solo como medida temporal mientras contactas con un CRAS: la alimentación manual puede hacer más daño que bien si no se hace bien, y un ave fría, herida o decaída no debe ser alimentada.</p>

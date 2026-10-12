@@ -4,7 +4,8 @@
     "descripcion": "Fichas de especies con guía de cuidados para aves caídas o heridas encontradas en España.",
     "cobertura": "50 especies habituales en España (fase 1 ampliada). El listado oficial completo (638 especies, SEO/BirdLife) se añadirá como índice ligero en una fase posterior.",
     "ultima_revision": "2026-07-22",
-    "aviso": "Esta guía orienta pero no sustituye a un CRAS. Ante heridas graves, sangrado, fracturas visibles o dudas, contacta siempre con un centro de recuperación de fauna silvestre."
+    "aviso": "Esta guía orienta pero no sustituye a un CRAS. Ante heridas graves, sangrado, fracturas visibles o dudas, contacta siempre con un centro de recuperación de fauna silvestre.",
+    "distribucion": "Distribución aproximada por comunidades autónomas, a partir de rangos generales de cada especie; orientativa, no un atlas de cría."
   },
   "especies": [
     {
@@ -43,6 +44,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -81,6 +104,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -118,6 +163,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: el pichón se alimenta de «leche de buche» de los padres y tarda semanas en volar; es normal verlo en el suelo si ya tiene plumas.",
         "que_hacer": "Si está emplumado y activo, déjalo y observa. Si es un pichón implume o está herido, llama a un CRAS: la alimentación manual de palomas es delicada y no conviene improvisarla."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -155,6 +222,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -193,6 +282,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -230,6 +341,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -267,6 +399,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -304,6 +457,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -341,6 +514,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: el pichón se alimenta de «leche de buche» de los padres y tarda semanas en volar; es normal verlo en el suelo si ya tiene plumas.",
         "que_hacer": "Si está emplumado y activo, déjalo y observa. Si es un pichón implume o está herido, llama a un CRAS: la alimentación manual de palomas es delicada y no conviene improvisarla."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año; en invierno llegan muchas del norte de Europa",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -378,6 +572,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: el pichón se alimenta de «leche de buche» de los padres y tarda semanas en volar; es normal verlo en el suelo si ya tiene plumas.",
         "que_hacer": "Si está emplumado y activo, déjalo y observa. Si es un pichón implume o está herido, llama a un CRAS: la alimentación manual de palomas es delicada y no conviene improvisarla."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -415,6 +631,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Sobre todo invernante (otoño-invierno)",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -453,6 +690,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -491,6 +750,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola y de vida aérea: los adultos pasan casi toda la vida volando y tienen las patas muy cortas.",
         "que_hacer": "Un vencejo o ave similar en el suelo no puede despegar por sí mismo. No lo lances al aire ni lo alimentes: guárdalo en una caja oscura y ventilada y llama a un CRAS."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -528,6 +808,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente y, en invierno, invernante del norte de Europa",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -565,6 +867,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente e invernante",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -603,6 +927,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: los pollos permanecen en el nido hasta que son casi adultos.",
         "que_hacer": "Un pollo de rapaz en el suelo sí suele necesitar ayuda: si está a la vista y el nido es accesible sin riesgo, devuélvelo; si no, llama a un CRAS. No le des comida ni agua."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -642,6 +988,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: los pollos permanecen en el nido hasta que son casi adultos.",
         "que_hacer": "Un pollo de rapaz en el suelo sí suele necesitar ayuda: si está a la vista y el nido es accesible sin riesgo, devuélvelo; si no, llama a un CRAS. No le des comida ni agua."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -680,6 +1048,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola, pero los pollos «ramean»: salen del nido trepando por las ramas antes de volar y los padres los siguen alimentando de noche.",
         "que_hacer": "Un pollo con plumón o plumas a medias en una rama o en el suelo no está necesariamente abandonado. Si no está herido, déjalo (o súbelo a una rama cercana sin dejarlo cerca de gatos) y observa de lejos. Si está herido o expuesto a peligro, CRAS."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano)",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -718,6 +1107,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -756,6 +1166,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente e invernante",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -793,6 +1225,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente e invernante",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -830,6 +1284,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente e invernante",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -867,6 +1343,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: cría en cavidades o taludes; los pollos permanecen dentro hasta tener plumas completas.",
         "que_hacer": "Si encuentras un pollo fuera de su cavidad y no se puede devolver con seguridad, llama a un CRAS. No lo alimentes."
+      },
+      "distribucion": {
+        "presencia": "Estival en el norte y residente en el sur",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -905,6 +1403,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -942,6 +1460,16 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente; endémico del suroeste peninsular",
+        "ccaa": [
+          "AND",
+          "CLM",
+          "CYL",
+          "EXT",
+          "MAD"
+        ]
       }
     },
     {
@@ -979,6 +1507,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1016,6 +1565,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1053,6 +1623,25 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1090,6 +1679,23 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente en el sur y estival en el interior",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CYL",
+          "EXT",
+          "MAD",
+          "MUR",
+          "NAV",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1128,6 +1734,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Estival en el norte e invernante en el sur",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1166,6 +1794,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Sobre todo invernante (otoño-invierno)",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1203,6 +1852,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1240,6 +1909,21 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente en bosques del norte y montañas",
+        "ccaa": [
+          "ARA",
+          "AST",
+          "CAT",
+          "CNT",
+          "CYL",
+          "GAL",
+          "MAD",
+          "NAV",
+          "PVA",
+          "RIO"
+        ]
       }
     },
     {
@@ -1278,6 +1962,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1315,6 +2020,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1353,6 +2079,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente e invernante",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1390,6 +2137,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: cría en cavidades o taludes; los pollos permanecen dentro hasta tener plumas completas.",
         "que_hacer": "Si encuentras un pollo fuera de su cavidad y no se puede devolver con seguridad, llama a un CRAS. No lo alimentes."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1427,6 +2195,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: cría en cavidades o taludes; los pollos permanecen dentro hasta tener plumas completas.",
         "que_hacer": "Si encuentras un pollo fuera de su cavidad y no se puede devolver con seguridad, llama a un CRAS. No lo alimentes."
+      },
+      "distribucion": {
+        "presencia": "Residente cerca de ríos, lagunas y costa",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1464,6 +2253,23 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola y de vida aérea: los adultos pasan casi toda la vida volando y tienen las patas muy cortas.",
         "que_hacer": "Un vencejo o ave similar en el suelo no puede despegar por sí mismo. No lo lances al aire ni lo alimentes: guárdalo en una caja oscura y ventilada y llama a un CRAS."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CYL",
+          "EXT",
+          "MAD",
+          "MUR",
+          "NAV",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1503,6 +2309,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: los pollos permanecen en el nido hasta que son casi adultos.",
         "que_hacer": "Un pollo de rapaz en el suelo sí suele necesitar ayuda: si está a la vista y el nido es accesible sin riesgo, devuélvelo; si no, llama a un CRAS. No le des comida ni agua."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1542,6 +2368,28 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola, pero los pollos «ramean»: salen del nido trepando por las ramas antes de volar y los padres los siguen alimentando de noche.",
         "que_hacer": "Un pollo con plumón o plumas a medias en una rama o en el suelo no está necesariamente abandonado. Si no está herido, déjalo (o súbelo a una rama cercana sin dejarlo cerca de gatos) y observa de lejos. Si está herido o expuesto a peligro, CRAS."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1581,6 +2429,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola, pero los pollos «ramean»: salen del nido trepando por las ramas antes de volar y los padres los siguen alimentando de noche.",
         "que_hacer": "Un pollo con plumón o plumas a medias en una rama o en el suelo no está necesariamente abandonado. Si no está herido, déjalo (o súbelo a una rama cercana sin dejarlo cerca de gatos) y observa de lejos. Si está herido o expuesto a peligro, CRAS."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1619,6 +2487,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola, pero los pollos «ramean»: salen del nido trepando por las ramas antes de volar y los padres los siguen alimentando de noche.",
         "que_hacer": "Un pollo con plumón o plumas a medias en una rama o en el suelo no está necesariamente abandonado. Si no está herido, déjalo (o súbelo a una rama cercana sin dejarlo cerca de gatos) y observa de lejos. Si está herido o expuesto a peligro, CRAS."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1657,6 +2545,27 @@
         "tipo": "semi-nidifugo",
         "descripcion": "Semi-nidífuga: el pollo abandona el nido a los pocos días y se esconde cerca, pero los padres lo siguen alimentando hasta que vuela.",
         "que_hacer": "Un pollo de gaviota caminando por un tejado, un patio o la acera suele ser normal. Déjalo salvo que esté herido, en una carretera o a merced de perros y gatos; en ese caso, CRAS. No le des pescado ni pan."
+      },
+      "distribucion": {
+        "presencia": "Residente: costas y, cada vez más, vertederos del interior",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "VAL"
+        ]
       }
     },
     {
@@ -1694,6 +2603,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: cría en cavidades o taludes; los pollos permanecen dentro hasta tener plumas completas.",
         "que_hacer": "Si encuentras un pollo fuera de su cavidad y no se puede devolver con seguridad, llama a un CRAS. No lo alimentes."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1731,6 +2661,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Estival (primavera-verano); inverna en África",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1770,6 +2721,27 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: los pollos permanecen en el nido hasta que son casi adultos.",
         "que_hacer": "Un pollo de rapaz en el suelo sí suele necesitar ayuda: si está a la vista y el nido es accesible sin riesgo, devuélvelo; si no, llama a un CRAS. No le des comida ni agua."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1807,6 +2779,26 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: nace casi sin plumas y dependiente. Pero los volantones (con plumas, cola corta, que saltan y piden comida) dejan el nido ANTES de saber volar y los padres siguen cuidándolos desde cerca.",
         "que_hacer": "Si tiene plumas y salta o aletea: déjalo donde está (si hay peligro inmediato, súbelo a un arbusto cercano) y vigila de lejos. Si está sin plumas o con plumón y ves el nido, devuélvelo; los padres no lo rechazan por tocarlo. Solo a un CRAS si está herido, empapado, frío o lleva horas solo."
+      },
+      "distribucion": {
+        "presencia": "Residente todo el año",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "CAT",
+          "CLM",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1844,6 +2836,22 @@
         "tipo": "nidicola",
         "descripcion": "Nidícola: el pichón se alimenta de «leche de buche» de los padres y tarda semanas en volar; es normal verlo en el suelo si ya tiene plumas.",
         "que_hacer": "Si está emplumado y activo, déjalo y observa. Si es un pichón implume o está herido, llama a un CRAS: la alimentación manual de palomas es delicada y no conviene improvisarla."
+      },
+      "distribucion": {
+        "presencia": "Residente en el centro y sur; ausente de la cornisa cantábrica",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "CAT",
+          "CLM",
+          "CYL",
+          "EXT",
+          "MAD",
+          "MUR",
+          "NAV",
+          "RIO",
+          "VAL"
+        ]
       }
     },
     {
@@ -1881,6 +2889,28 @@
         "tipo": "nidifugo",
         "descripcion": "Nidífuga: los pollos salen del nido a las pocas horas y siguen a los padres, que los alimentan.",
         "que_hacer": "Un polluelo solo y activo cerca del agua suele tener a sus padres cerca: observa un buen rato antes de actuar. Si está herido, empapado y frío o lejos del agua, llama a un CRAS."
+      },
+      "distribucion": {
+        "presencia": "Residente en lagunas, embalses y humedales",
+        "ccaa": [
+          "AND",
+          "ARA",
+          "AST",
+          "BAL",
+          "CAT",
+          "CLM",
+          "CNR",
+          "CNT",
+          "CYL",
+          "EXT",
+          "GAL",
+          "MAD",
+          "MUR",
+          "NAV",
+          "PVA",
+          "RIO",
+          "VAL"
+        ]
       }
     }
   ]
