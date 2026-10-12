@@ -87,7 +87,7 @@
 <meta name="theme-color" content="#2F4A3D">
 <link rel="icon" href="/assets/icons/icon-192.png">
 </head>
-<body class="deco-guia">
+<body>
 
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
@@ -115,7 +115,7 @@
 <div class="page-head wrap">
   <p class="eyebrow mono">Guía de especies</p>
   <h1>Identifica y consulta la ficha</h1>
-  <p class="lede" id="ledeCount">Especies habituales en España, con datos verificados. Busca por nombre o elige de la lista — la identificación automática por foto llegará más adelante.</p>
+  <p class="lede" id="ledeCount">Especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.</p>
 </div>
 
 <main class="wrap layout" id="contenido">
@@ -163,7 +163,7 @@ async function cargarEspecies() {
     renderList(ESPECIES);
 
     document.getElementById('ledeCount').textContent =
-      `${ESPECIES.length} especies habituales en España, con datos verificados. Busca por nombre o elige de la lista — la identificación automática por foto llegará más adelante.`;
+      `${ESPECIES.length} especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.`;
     document.getElementById('footerCount').textContent =
       `${ESPECIES.length} de 638 especies catalogadas en España — ampliación en curso`;
 
