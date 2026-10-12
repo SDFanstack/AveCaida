@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página no encontrada — AlaViva</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="La página que buscas no existe. Vuelve al inicio o consulta la guía de primeros auxilios para aves silvestres.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#2F4A3D">
+<link rel="icon" href="/favicon.ico">
+</head>
+<body class="deco-sobre">
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site">
+  <div class="wrap">
+    <a href="/index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 15C6 8 11 4 21 4C19 9 16 12 12 13.5C15 14 17.5 14 20 13C17 19 11 21 3 15Z" fill="#2F4A3D"/>
+      </svg>
+      AlaViva
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="/index.html">Inicio</a>
+      <a href="/checklist.html">¿Necesita ayuda?</a>
+      <a href="/identificar.html">Identificar</a>
+      <a href="/guia.html">Guía de especies</a>
+      <a href="/mapa-cras.html">CRAS</a>
+      <a href="/emergencia.html">Emergencia</a>
+      <a href="/chat.html">Chat</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<div class="page-head wrap" style="padding-bottom:70px">
+  <p class="eyebrow mono">Error 404</p>
+  <h1>Esta página ha echado a volar</h1>
+  <p class="lede">No encontramos lo que buscas: puede que el enlace esté mal escrito o que la página ya no exista.</p>
+  <p class="lede" style="margin-top:14px"><strong>¿Has encontrado un ave y necesitas ayuda ahora?</strong> No pierdas tiempo: ve directamente a la guía de actuación.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+    <a class="btn" href="/checklist.html">¿Necesita ayuda?</a>
+    <a class="btn" href="/emergencia.html">Emergencia</a>
+    <a class="btn" href="/mapa-cras.html">Buscar un CRAS</a>
+    <a class="btn" href="/index.html">Ir al inicio</a>
+  </div>
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-row">
+      <p class="mono">AlaViva</p>
+      <p>Proyecto independiente y gratuito</p>
+    </div>
+    <p class="disclaimer">AlaViva ofrece primeros auxilios orientativos, no sustituye a un centro de recuperación de fauna silvestre (CRAS) ni a asesoría veterinaria profesional.</p>
+    <p class="foot-links"><a href="/sobre.html">Sobre AlaViva</a> · <a href="/sobre.html#fuentes">Fuentes</a> · <a href="/sobre.html#privacidad">Privacidad</a></p>
+  </div>
+</footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+}
+</script>
+<script>
+const navToggle = document.getElementById('navToggle');
+const siteNav = document.querySelector('.site-nav');
+if (navToggle && siteNav) {
+  navToggle.addEventListener('click', () => {
+    const abierto = siteNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(abierto));
+  });
+  siteNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+</script>
+</body>
+</html>
