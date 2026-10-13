@@ -36,6 +36,9 @@ const LIMITS = {
 };
 
 const GEMINI_MODEL = 'gemini-3.6-flash';
+// Modelo de reserva (Workers AI) para el chat si Gemini falla o tarda demasiado.
+// Requiere un binding de Workers AI llamado AI; sin él, no hay reserva.
+const FALLBACK_MODEL = '@cf/mistralai/mistral-small-3.1-24b-instruct';
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
 
 // ---------- Utilidades ----------
@@ -121,12 +124,26 @@ Reglas que no puedes romper nunca:
 - NUNCA recomiendes medicamentos humanos, dosis, ni tratamientos veterinarios.
 - NUNCA minimices heridas graves, sangrado, fracturas o inconsciencia — ante eso, indica derivar de inmediato a un CRAS.
 - Antes de recomendar rescatar a una cría, comprueba si es un volantón (con plumas, saltando, piden comida) o una cría de especie nidífuga: en esos casos lo habitual es DEJARLA donde está y observar de lejos; los padres la siguen cuidando. Solo si está herida, expuesta a un peligro inmediato, empapada/fría o sin plumas y sin nido accesible, recomienda un CRAS.
+- Distingue SIEMPRE entre plumón y plumas. Si la persona describe "pelusa", "pelo", "algodón" o "plumón", la cría NO es un volantón: es un polluelo sin plumas de vuelo. NUNCA lo llames volantón en ese caso. Un volantón tiene plumas reales, cola corta y salta o aletea.
+- Si el polluelo tiene plumón (sobre todo blanco o claro), pico grande u ojos grandes y amarillos, puede ser una cría de rapaz (nocturna o diurna): tratándose de rapaces, recomienda contactar con un CRAS pronto y NO sugieras dejarla sola ni alimentarla. Si hay un nido accesible y seguro, se puede volver a poner dentro con las manos limpias, pero ante la duda, CRAS.
+- Si falta información para clasificar la cría, pregunta primero (plumón o plumas, si salta, si se ve el nido) y no des instrucciones definitivas hasta tenerla. No afirmes una conclusión si la descripción no la respalda.
 - Si no estás segura de algo, dilo explícitamente en vez de inventar una respuesta con apariencia de certeza.
 - Sé breve y clara, en español, con un tono cálido pero directo — la persona puede estar con el ave en la mano mientras te escribe.${contexto}`;
 }
 
 // ---------- Llamada a Gemini ----------
 
+// Llama a Gemini y reintenta si el modelo está saturado (503) o falla de forma temporal (500)
+async function fetchGemini(url, options) {
+  const esperas = [700, 1800];
+  let res;
+  for (let i = 0; i <= esperas.length; i++) {
+    res = await fetch(url, options);
+    if (res.status !== 503 && res.status !== 500) return res;
+    if (i < esperas.length) await new Promise((r) => setTimeout(r, esperas[i]));
+  }
+  return res;
+}
 async function callGemini(apiKey, systemPrompt, userParts) {
   const body = {
     system_instruction: { parts: [{ text: systemPrompt }] },
@@ -137,7 +154,7 @@ async function callGemini(apiKey, systemPrompt, userParts) {
     }
   };
 
-  const res = await fetch(`${GEMINI_URL}?key=${apiKey}`, {
+  const res = await fetchGemini(`${GEMINI_URL}?key=${apiKey}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body)
@@ -244,19 +261,36 @@ async function handleChat(request, env, origin) {
       }
     };
 
-    const res = await fetch(`${GEMINI_URL}?key=${env.GEMINI_API_KEY}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(geminiBody)
-    });
+    let reply;
+    try {
+      // Con modelo de reserva disponible, un solo intento en Gemini (sin esperas largas)
+      const llamar = env.AI ? fetch : fetchGemini;
+      const res = await llamar(`${GEMINI_URL}?key=${env.GEMINI_API_KEY}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(geminiBody),
+        // Si Gemini está saturado y tarda demasiado, se corta y se usa la reserva
+        signal: AbortSignal.timeout(env.AI ? 8000 : 25000)
+      });
 
-    if (!res.ok) {
-      const errText = await res.text();
-      throw new Error(`Gemini respondió ${res.status}: ${errText.slice(0, 300)}`);
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`Gemini respondió ${res.status}: ${errText.slice(0, 300)}`);
+      }
+
+      const data = await res.json();
+      reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || 'No he podido generar una respuesta, inténtalo de nuevo.';
+    } catch (errGemini) {
+      if (!env.AI) throw errGemini;
+      // Reserva: Workers AI (Cloudflare)
+      const messages = [
+        { role: 'system', content: systemPrompt },
+        ...contents.map(c => ({ role: c.role === 'model' ? 'assistant' : 'user', content: c.parts[0].text }))
+      ];
+      const out = await env.AI.run(FALLBACK_MODEL, { messages, max_tokens: 700 });
+      reply = out?.response || out?.choices?.[0]?.message?.content;
+      if (!reply) throw new Error('Sin respuesta ni de Gemini (' + errGemini.message.slice(0, 80) + ') ni del modelo de reserva.');
     }
-
-    const data = await res.json();
-    const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || 'No he podido generar una respuesta, inténtalo de nuevo.';
 
     return jsonResponse({ reply }, 200, origin);
   } catch (err) {
