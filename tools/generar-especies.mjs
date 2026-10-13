@@ -4,7 +4,7 @@
 // Si cambias un dato en especies.json, vuelve a ejecutarlo y sube la carpeta "especies" y sitemap.xml.
 import fs from 'node:fs';
 
-const BASE = 'https://alaviva.pages.dev';
+const BASE = 'https://avecaida.com';
 const data = JSON.parse(fs.readFileSync('especies.json', 'utf8'));
 const E = data.especies;
 // Mapa de España (comunidades autónomas) generado con tools/spain-paths.json
@@ -52,7 +52,7 @@ const HEADER = `<header class="site">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M3 15C6 8 11 4 21 4C19 9 16 12 12 13.5C15 14 17.5 14 20 13C17 19 11 21 3 15Z" fill="#2F4A3D"/>
       </svg>
-      AlaViva
+      AveCaída
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
     <nav class="site-nav" aria-label="Navegación principal">
@@ -134,14 +134,14 @@ const CSS = `  .esp-wrap { max-width: 820px; padding-bottom: 60px; }
 function pagina(e) {
   const n = esc(e.nombre_comun);
   const url = `${BASE}/especies/${e.id}.html`;
-  const title = `${e.nombre_comun}: primeros auxilios y cuándo ir a un CRAS | AlaViva`;
+  const title = `${e.nombre_comun}: primeros auxilios y cuándo ir a un CRAS | AveCaída`;
   const desc = `${e.nombre_comun} (${e.nombre_cientifico}): cómo identificarla, si necesita ayuda de verdad, primeros cuidados mientras contactas con un CRAS y cuándo derivarla.`;
   const d = e.desarrollo;
   const otras = E.filter(x => x.familia === e.familia && x.id !== e.id).slice(0, 8);
   const img = e.imagen ? `/${e.imagen.replace(/^\//, '')}?v=${IMG_VERSION}` : '';
   const ld = {
     '@context': 'https://schema.org', '@type': 'WebPage', name: title, description: desc, url, inLanguage: 'es-ES',
-    isPartOf: { '@type': 'WebSite', name: 'AlaViva', url: BASE + '/' },
+    isPartOf: { '@type': 'WebSite', name: 'AveCaída', url: BASE + '/' },
     breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Inicio', item: BASE + '/' },
       { '@type': 'ListItem', position: 2, name: 'Guía de especies', item: BASE + '/guia.html' },
@@ -155,7 +155,7 @@ function pagina(e) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="AlaViva">
+<meta property="og:site_name" content="AveCaída">
 <meta property="og:locale" content="es_ES">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
@@ -244,7 +244,7 @@ ${HEADER}
     <a href="/checklist.html" class="btn">Hacer el checklist</a>
     <a href="/mapa-cras.html" class="btn btn-outline">Buscar mi CRAS</a>
     <a href="/identificar.html" class="btn btn-outline">Identificar por foto</a>
-    <button type="button" class="btn btn-outline share-btn" data-title="${esc(title)}" data-text="${n}: qué hacer y cuándo llevarla a un CRAS, en AlaViva." data-url="${url}" aria-expanded="false">Compartir</button>
+    <button type="button" class="btn btn-outline share-btn" data-title="${esc(title)}" data-text="${n}: qué hacer y cuándo llevarla a un CRAS, en AveCaída." data-url="${url}" aria-expanded="false">Compartir</button>
   </div>
 
   ${otras.length ? `<h2>Otras especies de ${esc(e.familia.toLowerCase())}</h2>
@@ -259,11 +259,11 @@ ${HEADER}
 <footer class="site">
   <div class="wrap">
     <div class="foot-row">
-      <p class="mono">AlaViva</p>
+      <p class="mono">AveCaída</p>
       <p>Proyecto independiente y gratuito</p>
     </div>
-    <p class="disclaimer">AlaViva ofrece primeros auxilios orientativos, no sustituye a un centro de recuperación de fauna silvestre (CRAS) ni a asesoría veterinaria profesional. En España, la tenencia de fauna silvestre sin autorización está regulada por ley. Manipula siempre con las manos limpias o guantes.</p>
-    <p class="foot-links"><a href="/sobre.html">Sobre AlaViva</a> · <a href="/sobre.html#fuentes">Fuentes</a> · <a href="/sobre.html#privacidad">Privacidad</a></p>
+    <p class="disclaimer">AveCaída ofrece primeros auxilios orientativos, no sustituye a un centro de recuperación de fauna silvestre (CRAS) ni a asesoría veterinaria profesional. En España, la tenencia de fauna silvestre sin autorización está regulada por ley. Manipula siempre con las manos limpias o guantes.</p>
+    <p class="foot-links"><a href="/sobre.html">Sobre AveCaída</a> · <a href="/sobre.html#fuentes">Fuentes</a> · <a href="/sobre.html#privacidad">Privacidad</a> · <a href="/sobre.html#contacto">Contacto</a></p>
   </div>
 </footer>
 

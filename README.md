@@ -1,16 +1,16 @@
-# 🦅 AlaViva
+# 🦅 AveCaída
 
 **Primeros auxilios responsables para aves silvestres caídas o heridas en España.**
 
-🔗 **Web en vivo:** [alaviva.pages.dev](https://alaviva.pages.dev/)
+🔗 **Web en vivo:** [avecaida.com](https://avecaida.com/)
 
 ---
 
-## ¿Qué es AlaViva?
+## ¿Qué es AveCaída?
 
-Cada año, miles de personas en España se encuentran con un ave caída — un polluelo sin plumas, un volantón en el suelo, un adulto herido — y no saben qué hacer. AlaViva existe para responder esa pregunta en el momento, con pasos claros.
+Cada año, miles de personas en España se encuentran con un ave caída — un polluelo sin plumas, un volantón en el suelo, un adulto herido — y no saben qué hacer. AveCaída existe para responder esa pregunta en el momento, con pasos claros.
 
-**AlaViva no es una guía para convertir un ave silvestre en mascota.** En España, la fauna silvestre está protegida por ley (Ley 42/2007). La misión del proyecto es ayudar a decidir si hay que intervenir y, si el ave necesita ayuda, dar los primeros cuidados mientras se contacta con un centro de recuperación de fauna (CRAS), no sustituir a esos profesionales.
+**AveCaída no es una guía para convertir un ave silvestre en mascota.** En España, la fauna silvestre está protegida por ley (Ley 42/2007). La misión del proyecto es ayudar a decidir si hay que intervenir y, si el ave necesita ayuda, dar los primeros cuidados mientras se contacta con un centro de recuperación de fauna (CRAS), no sustituir a esos profesionales.
 
 > ⚠️ **Estado del contenido:** las pautas de alimentación de urgencia, frecuencias y criterios de derivación son orientativas y **aún no han sido revisadas por un veterinario ni por un rehabilitador de fauna**. Si lo eres y ves algo mejorable, abre un *issue*.
 
@@ -41,7 +41,7 @@ Un proyecto deliberadamente ligero y sin dependencias de pago:
 ## Estructura del repositorio
 
 ```
-alaviva/
+AveCaida/
 ├── index.html            → portada
 ├── checklist.html        → "¿de verdad necesita ayuda?"
 ├── emergencia.html       → primeros auxilios inmediatos
@@ -60,7 +60,7 @@ alaviva/
 
 ## Privacidad
 
-Sin cuentas, sin cookies de seguimiento y sin analítica. Las fotos y mensajes del identificador y el chat se envían a la API de Gemini para generar la respuesta y **no se guardan** en AlaViva. Detalle completo en [`sobre.html`](https://alaviva.pages.dev/sobre.html#privacidad).
+Sin cuentas, sin cookies de seguimiento y sin analítica. Las fotos y mensajes del identificador y el chat se envían a la API de Gemini para generar la respuesta y **no se guardan** en AveCaída. Detalle completo en [`sobre.html`](https://avecaida.com/sobre.html#privacidad).
 
 ## Estado del proyecto
 
@@ -72,7 +72,7 @@ Sin cuentas, sin cookies de seguimiento y sin analítica. Las fotos y mensajes d
 
 ## Aviso legal
 
-AlaViva ofrece orientación general, no sustituye a un centro de recuperación de fauna silvestre (CRAS) ni a asesoría veterinaria profesional. En España, la tenencia de fauna silvestre sin autorización está regulada por ley. Ante heridas graves o dudas serias, contacta siempre con un profesional.
+AveCaída ofrece orientación general, no sustituye a un centro de recuperación de fauna silvestre (CRAS) ni a asesoría veterinaria profesional. En España, la tenencia de fauna silvestre sin autorización está regulada por ley. Ante heridas graves o dudas serias, contacta siempre con un profesional.
 
 ---
 

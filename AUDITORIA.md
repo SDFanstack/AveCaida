@@ -1,4 +1,4 @@
-# Auditoría completa — AlaViva
+# Auditoría completa — AveCaída
 *Análisis crítico del proyecto a fecha 22 julio 2026. Sin código, solo arquitectura y producto.*
 
 ---

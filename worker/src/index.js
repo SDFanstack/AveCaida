@@ -1,5 +1,5 @@
 /**
- * AlaViva — Worker de Cloudflare
+ * AveCaída — Worker de Cloudflare
  * =========================================================
  * Dos rutas:
  *   POST /api/identify  → identificación de especie a partir de una foto
@@ -20,6 +20,8 @@ import { ESPECIES_COMPACTAS } from './especies_compact.js';
 
 // Orígenes permitidos a llamar a este Worker. Ajusta si cambias de dominio.
 const ALLOWED_ORIGINS = [
+  'https://avecaida.com',
+  'https://www.avecaida.com',
   'https://alaviva.pages.dev',
   'http://localhost:3000',
   'http://127.0.0.1:3000'
@@ -79,7 +81,7 @@ function buildIdentifyPrompt() {
     `- id:"${e.id}" | ${e.nombre_comun} (${e.nombre_cientifico}, ${e.familia}) — ${e.rasgos}. Confundible con: ${e.confundible_con.join(', ')}.`
   ).join('\n');
 
-  return `Eres el módulo de identificación de especies de AlaViva, una guía de primeros auxilios para aves silvestres caídas en España.
+  return `Eres el módulo de identificación de especies de AveCaída, una guía de primeros auxilios para aves silvestres caídas en España.
 
 Tu única tarea: mirar la foto y devolver los candidatos de especie MÁS PROBABLES, anclados a esta lista verificada. NUNCA inventes una especie fuera de esta lista salvo que estés muy seguro de que ninguna encaja, en cuyo caso dilo explícitamente.
 
@@ -110,7 +112,7 @@ function buildChatPrompt(especieContexto) {
     }
   }
 
-  return `Eres el asistente de chat de AlaViva, una guía española de primeros auxilios para aves silvestres caídas o heridas.
+  return `Eres el asistente de chat de AveCaída, una guía española de primeros auxilios para aves silvestres caídas o heridas.
 
 Tu ámbito es ESTRICTAMENTE: identificación de aves, primeros auxilios, alimentación de urgencia, y derivación a centros de recuperación (CRAS). Si te preguntan por cualquier otro tema, redirige amablemente al ámbito de la web y no respondas la pregunta fuera de tema.
 

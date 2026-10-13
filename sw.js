@@ -1,4 +1,4 @@
-// AlaViva — service worker mínimo.
+// AveCaída — service worker mínimo.
 // Deliberadamente NO cachea nada: como la web se actualiza a menudo
 // (especies, CRAS, correcciones), preferimos que la app siempre pida
 // la versión más reciente en vez de mostrar contenido antiguo.

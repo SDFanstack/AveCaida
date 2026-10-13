@@ -1,4 +1,4 @@
-/* AlaViva — botón de compartir.
+/* AveCaída — botón de compartir.
    Uso: <button class="btn btn-outline share-btn" data-title="..." data-text="..." [data-url="..."] [data-hash="galicia"]>Compartir</button>
    - Si el navegador tiene el menú nativo de compartir (móviles), se usa.
    - Si no, se despliega un menú con WhatsApp y "Copiar enlace".

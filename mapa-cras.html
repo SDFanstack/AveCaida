@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AlaViva — Centros de recuperación (CRAS) por comunidad autónoma</title>
+<title>AveCaída — Centros de recuperación (CRAS) por comunidad autónoma</title>
 <meta name="description" content="Encuentra el centro de recuperación de fauna silvestre (CRAS) más cercano en tu comunidad autónoma, con dirección y teléfono verificados.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="AlaViva">
+<meta property="og:site_name" content="AveCaída">
 <meta property="og:locale" content="es_ES">
-<meta property="og:title" content="AlaViva — Centros de recuperación (CRAS) por comunidad autónoma">
+<meta property="og:title" content="AveCaída — Centros de recuperación (CRAS) por comunidad autónoma">
 <meta property="og:description" content="Encuentra el centro de recuperación de fauna silvestre (CRAS) más cercano en tu comunidad autónoma, con dirección y teléfono verificados.">
-<meta property="og:url" content="https://alaviva.pages.dev/mapa-cras.html">
-<meta property="og:image" content="https://alaviva.pages.dev/assets/og-image.png">
+<meta property="og:url" content="https://avecaida.com/mapa-cras.html">
+<meta property="og:image" content="https://avecaida.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://alaviva.pages.dev/mapa-cras.html">
+<link rel="canonical" href="https://avecaida.com/mapa-cras.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -87,7 +87,7 @@
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M3 15C6 8 11 4 21 4C19 9 16 12 12 13.5C15 14 17.5 14 20 13C17 19 11 21 3 15Z" fill="#2F4A3D"/>
       </svg>
-      AlaViva
+      AveCaída
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
     <nav class="site-nav" aria-label="Navegación principal">
@@ -158,7 +158,7 @@
 <footer class="site">
   <div class="wrap">
     <p class="disclaimer">Este listado se revisa periódicamente pero los centros pueden cambiar de dirección, teléfono u horario. Ante una emergencia, llama antes de desplazarte. Recuerda: si un ave silvestre necesita ayuda, en España debe entregarse a un CRAS, no quedarse en un domicilio particular. Manipula siempre con las manos limpias o guantes. Si detectas un dato desactualizado, o si tu comunidad necesita revisión, puedes ayudarnos a completarlo.</p>
-    <p class="foot-links"><a href="sobre.html">Sobre AlaViva</a> · <a href="sobre.html#fuentes">Fuentes</a> · <a href="sobre.html#privacidad">Privacidad</a></p>
+    <p class="foot-links"><a href="sobre.html">Sobre AveCaída</a> · <a href="sobre.html#fuentes">Fuentes</a> · <a href="sobre.html#privacidad">Privacidad</a> · <a href="sobre.html#contacto">Contacto</a></p>
   </div>
 </footer>
 
@@ -314,8 +314,8 @@ function renderPanel(id) {
   // Aviso de dato incorrecto: abre un issue de GitHub ya rellenado con la comunidad
   const titulo = encodeURIComponent('Dato incorrecto en CRAS: ' + region.name);
   const cuerpo = encodeURIComponent('Comunidad: ' + region.name + '\n\nQué centro/dato está mal:\n\nDato correcto (y fuente si la tienes):\n');
-  html += '<div class="share-row"><button type="button" class="btn btn-outline btn-sm share-btn" data-hash="' + id + '" data-title="CRAS de ' + region.name + ' — AlaViva" data-text="Centros de recuperación de fauna silvestre de ' + region.name + ':" aria-expanded="false">Compartir esta comunidad</button></div>';
-  html += '<a class="report-link" target="_blank" rel="noopener" href="https://github.com/SDFanstack/alaviva/issues/new?title=' + titulo + '&body=' + cuerpo + '">¿Algún dato está desactualizado? Avísanos</a>';
+  html += '<div class="share-row"><button type="button" class="btn btn-outline btn-sm share-btn" data-hash="' + id + '" data-title="CRAS de ' + region.name + ' — AveCaída" data-text="Centros de recuperación de fauna silvestre de ' + region.name + ':" aria-expanded="false">Compartir esta comunidad</button></div>';
+  html += '<a class="report-link" href="mailto:contacto@avecaida.com?subject=' + titulo + '&body=' + cuerpo + '">¿Algún dato está desactualizado? Avísanos</a>';
   document.getElementById('panel').innerHTML = html;
 }
 

@@ -1,4 +1,4 @@
-# AlaViva API — despliegue
+# AveCaída API — despliegue
 
 ## 1. Requisitos
 - Cuenta gratuita en [Cloudflare](https://dash.cloudflare.com) (Workers)
@@ -32,7 +32,7 @@ wrangler deploy
 Te dará una URL tipo `https://alaviva-api.TU-USUARIO.workers.dev` — esa es la que hay que poner en `identificar.html` y `chat.html` (busca `WORKER_URL` en ambos archivos).
 
 ## 6. Ajustar el origen permitido
-En `src/index.js`, `ALLOWED_ORIGINS` ya incluye `https://alaviva.pages.dev`. Si cambias de dominio, actualízalo ahí.
+En `src/index.js`, `ALLOWED_ORIGINS` ya incluye `https://avecaida.com`. Si cambias de dominio, actualízalo ahí.
 
 ## Coste esperado
 Con el límite de 40 peticiones/IP/día y un grupo de pocos usuarios: 0€, dentro de las cuotas gratuitas de Cloudflare Workers y Gemini Flash.
