@@ -114,15 +114,17 @@ chatForm.addEventListener('submit', async (e) => {
   if (!text) return;
 
   addMessage('user', text);
+  const historialPrevio = history.slice();
   history.push({ role: 'user', text });
   chatInput.value = '';
   chatInput.disabled = true;
 
   try {
+    // El historial va SIN el mensaje actual (este se envía aparte en "message")
     const res = await fetch(WORKER_URL + '/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message: text, history, especie_id: especieId })
+      body: JSON.stringify({ message: text, history: historialPrevio, especie_id: especieId })
     });
 
     if (!res.ok) {
