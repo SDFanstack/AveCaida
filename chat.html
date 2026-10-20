@@ -26,6 +26,13 @@
   .msg { max-width: 80%; padding: 10px 14px; border-radius: 12px; margin-bottom: 10px; font-size: 0.92rem; line-height: 1.5; }
   .msg.user { background: var(--moss-soft); color: var(--primary); margin-left: auto; }
   .msg.assistant { background: var(--bg); border: 1px solid var(--line); color: var(--ink); }
+  .msg.typing { display: flex; align-items: center; gap: 10px; color: var(--ink-soft); font-size: 0.85rem; }
+  .typing-dots { display: inline-flex; gap: 4px; }
+  .typing-dots i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: .35; animation: typing-bounce 1.2s infinite ease-in-out; }
+  .typing-dots i:nth-child(2) { animation-delay: .15s; }
+  .typing-dots i:nth-child(3) { animation-delay: .3s; }
+  @keyframes typing-bounce { 0%, 60%, 100% { opacity: .35; transform: translateY(0); } 30% { opacity: 1; transform: translateY(-3px); } }
+  @media (prefers-reduced-motion: reduce) { .typing-dots i { animation: none; opacity: .7; } }
   .msg.system { background: var(--urgent-soft); color: #7A3325; margin: 0 auto 10px; text-align: center; max-width: 100%; font-size: 0.85rem; }
 
   .chat-input-row { display: flex; gap: 10px; }
@@ -119,6 +126,17 @@ chatForm.addEventListener('submit', async (e) => {
   chatInput.value = '';
   chatInput.disabled = true;
 
+  // Indicador de "escribiendo" mientras llega la respuesta
+  const typing = document.createElement('div');
+  typing.className = 'msg assistant typing';
+  typing.innerHTML = '<span class="typing-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="typing-text">Pensando…</span>';
+  chatLog.appendChild(typing);
+  chatLog.scrollTop = chatLog.scrollHeight;
+  const avisoLento = setTimeout(() => {
+    const t = typing.querySelector('.typing-text');
+    if (t) t.textContent = 'Está tardando un poco más de lo normal…';
+  }, 8000);
+
   try {
     // El historial va SIN el mensaje actual (este se envía aparte en "message")
     const res = await fetch(WORKER_URL + '/api/chat', {
@@ -134,9 +152,11 @@ chatForm.addEventListener('submit', async (e) => {
     }
 
     const data = await res.json();
+    typing.remove();
     addMessage('assistant', data.reply);
     history.push({ role: 'assistant', text: data.reply });
   } catch (err) {
+    typing.remove();
     // El mensaje sin respuesta no debe quedar en el historial
     if (history.length && history[history.length - 1].role === 'user') history.pop();
     const motivo = err.status === 429
@@ -150,6 +170,8 @@ chatForm.addEventListener('submit', async (e) => {
     chatLog.appendChild(d);
     chatLog.scrollTop = chatLog.scrollHeight;
   } finally {
+    clearTimeout(avisoLento);
+    typing.remove();
     chatInput.disabled = false;
     chatInput.focus();
   }

@@ -256,8 +256,8 @@ async function handleChat(request, env, origin) {
       system_instruction: { parts: [{ text: systemPrompt }] },
       contents,
       generationConfig: {
-        maxOutputTokens: 1024,
-        thinkingConfig: { thinkingLevel: 'low' }
+        maxOutputTokens: 700,
+        thinkingConfig: { thinkingLevel: 'minimal' }
       }
     };
 
@@ -270,7 +270,7 @@ async function handleChat(request, env, origin) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(geminiBody),
         // Si Gemini está saturado y tarda demasiado, se corta y se usa la reserva
-        signal: AbortSignal.timeout(env.AI ? 8000 : 25000)
+        signal: AbortSignal.timeout(env.AI ? 6000 : 25000)
       });
 
       if (!res.ok) {
