@@ -52,6 +52,10 @@
   .field-block.warn h4 { color: var(--urgent); }
   .field-block.warn p { color: #7A3325; }
 
+  .guia-cruce { display: flex; align-items: center; justify-content: space-between; gap: 14px 20px; flex-wrap: wrap; background: var(--accent-soft); border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: var(--radius); padding: 16px 20px; margin: 20px 0 6px; }
+  .guia-cruce p { margin: 0; color: var(--ink); font-size: 0.98rem; line-height: 1.5; flex: 1 1 260px; }
+  .guia-cruce strong { display: block; font-family: 'Fraunces', serif; font-size: 1.12rem; margin-bottom: 2px; }
+  .guia-cruce .btn { flex: none; }
   .sugerir-guia { margin: 6px 0 0; font-size: 0.92rem; }
   .sugerir-guia a { color: var(--primary); font-weight: 600; }
   .especie-sello {
@@ -118,8 +122,8 @@
   <p class="eyebrow mono">Guía de especies</p>
   <h1>Identifica y consulta la ficha</h1>
   <p class="lede" id="ledeCount">Especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.</p>
+  <div class="guia-cruce"><p><strong>¿Has encontrado un loro, una cotorra o un periquito?</strong>No son aves silvestres de España y se tratan de otra forma.</p><a class="btn" href="exoticas.html">Ver loros y cotorras</a></div>
   <p class="sugerir-guia">¿Falta tu ave o ves algo mejorable? <a href="mailto:contacto@avecaida.com?subject=Sugerencia%20de%20especie%20para%20AveCa%C3%ADda&amp;body=Especie%20o%20dato%3A%0A%0AD%C3%B3nde%20la%20vi%20(provincia)%3A%0A%0ASi%20puedes%2C%20adjunta%20una%20foto.">Propón una especie</a>.</p>
-  <p class="sugerir-guia">¿Has encontrado un loro, una cotorra o un periquito? Mira la <a href="exoticas.html">guía de loros y cotorras</a>: no son aves silvestres de España y se tratan de otra forma.</p>
 </div>
 
 <main class="wrap layout" id="contenido">

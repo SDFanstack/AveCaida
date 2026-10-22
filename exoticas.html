@@ -52,6 +52,10 @@
   .field-block.warn h4 { color: var(--urgent); }
   .field-block.warn p { color: #7A3325; }
 
+  .guia-cruce { display: flex; align-items: center; justify-content: space-between; gap: 14px 20px; flex-wrap: wrap; background: var(--accent-soft); border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: var(--radius); padding: 16px 20px; margin: 20px 0 6px; }
+  .guia-cruce p { margin: 0; color: var(--ink); font-size: 0.98rem; line-height: 1.5; flex: 1 1 260px; }
+  .guia-cruce strong { display: block; font-family: 'Fraunces', serif; font-size: 1.12rem; margin-bottom: 2px; }
+  .guia-cruce .btn { flex: none; }
   .sugerir-guia { margin: 6px 0 0; font-size: 0.92rem; }
   .sugerir-guia a { color: var(--primary); font-weight: 600; }
   .especie-sello {
@@ -118,8 +122,8 @@
   <p class="eyebrow mono">Guía aparte</p>
   <h1>Loros y cotorras</h1>
   <p class="lede" id="ledeCount">Aves exóticas que se encuentran con frecuencia en ciudades: unas escapan de casa y otras son especies invasoras. No son aves silvestres de España, así que aquí se actúa de otra forma que con las de la guía principal.</p>
+  <div class="guia-cruce"><p><strong>¿Es un ave silvestre de España?</strong>Gorriones, mirlos, vencejos, rapaces… tienen su propia guía.</p><a class="btn" href="guia.html">Ver la guía de especies</a></div>
   <p class="sugerir-guia">¿Falta tu ave o ves algo mejorable? <a href="mailto:contacto@avecaida.com?subject=Sugerencia%20de%20especie%20para%20AveCa%C3%ADda&amp;body=Especie%20o%20dato%3A%0A%0AD%C3%B3nde%20la%20vi%20(provincia)%3A%0A%0ASi%20puedes%2C%20adjunta%20una%20foto.">Propón una especie</a>.</p>
-  <p class="sugerir-guia">¿Es un ave silvestre autóctona? Consulta la <a href="guia.html">guía de especies</a>.</p>
 </div>
 
 <main class="wrap layout" id="contenido">
