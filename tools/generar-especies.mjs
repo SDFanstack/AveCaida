@@ -138,6 +138,9 @@ function pagina(e) {
   const title = `${e.nombre_comun}: primeros auxilios y cuándo ir a un CRAS | AveCaída`;
   const desc = `${e.nombre_comun} (${e.nombre_cientifico}): cómo identificarla, si necesita ayuda de verdad, primeros cuidados mientras contactas con un CRAS y cuándo derivarla.`;
   const d = e.desarrollo;
+  const exot = e.grupo === 'exoticas';
+  const guiaUrl = exot ? 'exoticas.html' : 'guia.html';
+  const guiaNombre = exot ? 'Loros y cotorras' : 'Guía de especies';
   const otras = E.filter(x => x.familia === e.familia && x.id !== e.id).slice(0, 8);
   const img = e.imagen ? `/${e.imagen.replace(/^\//, '')}?v=${IMG_VERSION}` : '';
   const ld = {
@@ -145,7 +148,7 @@ function pagina(e) {
     isPartOf: { '@type': 'WebSite', name: 'AveCaída', url: BASE + '/' },
     breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Inicio', item: BASE + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Guía de especies', item: BASE + '/guia.html' },
+      { '@type': 'ListItem', position: 2, name: guiaNombre, item: BASE + '/' + guiaUrl },
       { '@type': 'ListItem', position: 3, name: e.nombre_comun, item: url } ] }
   };
   return `<!DOCTYPE html>
@@ -185,7 +188,7 @@ ${CSS}
 ${HEADER}
 
 <main id="contenido" class="wrap esp-wrap">
-  <p class="crumbs"><a href="/index.html">Inicio</a> › <a href="/guia.html">Guía de especies</a> › ${n}</p>
+  <p class="crumbs"><a href="/index.html">Inicio</a> › <a href="/${guiaUrl}">${guiaNombre}</a> › ${n}</p>
 
   <div class="esp-head">
     <div>
@@ -285,7 +288,7 @@ fs.mkdirSync('especies', { recursive: true });
 for (const e of E) fs.writeFileSync(`especies/${e.id}.html`, pagina(e));
 
 // Sitemap: páginas principales + una entrada por especie
-const principales = [['', 1.0], ['checklist.html', 0.9], ['emergencia.html', 0.9], ['guia.html', 0.9], ['identificar.html', 0.8], ['mapa-cras.html', 0.8], ['chat.html', 0.6], ['sobre.html', 0.5]];
+const principales = [['', 1.0], ['checklist.html', 0.9], ['emergencia.html', 0.9], ['guia.html', 0.9], ['exoticas.html', 0.7], ['identificar.html', 0.8], ['mapa-cras.html', 0.8], ['chat.html', 0.6], ['sobre.html', 0.5]];
 const urls = [
   ...principales.map(([p, pr]) => `  <url>\n    <loc>${BASE}/${p}</loc>\n    <priority>${pr.toFixed(1)}</priority>\n  </url>`),
   ...E.map(e => `  <url>\n    <loc>${BASE}/especies/${e.id}.html</loc>\n    <priority>0.7</priority>\n  </url>`)

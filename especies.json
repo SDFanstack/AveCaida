@@ -2,7 +2,7 @@
   "_meta": {
     "proyecto": "AveCaída",
     "descripcion": "Fichas de especies con guía de cuidados para aves caídas o heridas encontradas en España.",
-    "cobertura": "55 especies: 50 habituales en España y 5 psitácidas (2 exóticas invasoras y 3 aves de compañía escapadas). El listado oficial completo (638 especies, SEO/BirdLife) se añadirá como índice ligero en una fase posterior.",
+    "cobertura": "50 especies silvestres habituales en España (guía principal) y 5 psitácidas en una guía aparte (loros y cotorras: 2 exóticas invasoras y 3 aves de compañía escapadas). El listado oficial completo (638 especies, SEO/BirdLife) se añadirá como índice ligero en una fase posterior.",
     "ultima_revision": "2026-07-22",
     "aviso": "Esta guía orienta pero no sustituye a un CRAS. Ante heridas graves, sangrado, fracturas visibles o dudas, contacta siempre con un centro de recuperación de fauna silvestre.",
     "distribucion": "Distribución aproximada por comunidades autónomas, a partir de rangos generales de cada especie; orientativa, no un atlas de cría."
@@ -2964,7 +2964,8 @@
           "MAD",
           "VAL"
         ]
-      }
+      },
+      "grupo": "exoticas"
     },
     {
       "id": "cotorra-de-kramer",
@@ -3016,7 +3017,8 @@
           "MAD",
           "VAL"
         ]
-      }
+      },
+      "grupo": "exoticas"
     },
     {
       "id": "periquito-comun",
@@ -3053,7 +3055,8 @@
         ]
       },
       "cuando_derivar_cras": "Si está herida, sangra, está esponjada y apática o no come: veterinario de animales exóticos. Un CRAS solo la recibirá si el centro lo decide, así que llama antes de ir.",
-      "imagen": "assets/aves/periquito-comun.jpg"
+      "imagen": "assets/aves/periquito-comun.jpg",
+      "grupo": "exoticas"
     },
     {
       "id": "ninfa",
@@ -3090,7 +3093,8 @@
         ]
       },
       "cuando_derivar_cras": "Si está herida, sangra, está esponjada y apática o no come: veterinario de animales exóticos. Un CRAS solo la recibirá si el centro lo decide, así que llama antes de ir.",
-      "imagen": "assets/aves/ninfa.jpg"
+      "imagen": "assets/aves/ninfa.jpg",
+      "grupo": "exoticas"
     },
     {
       "id": "agapornis",
@@ -3127,7 +3131,8 @@
         ]
       },
       "cuando_derivar_cras": "Si está herida, sangra, está esponjada y apática o no come: veterinario de animales exóticos. Un CRAS solo la recibirá si el centro lo decide, así que llama antes de ir.",
-      "imagen": "assets/aves/agapornis.jpg"
+      "imagen": "assets/aves/agapornis.jpg",
+      "grupo": "exoticas"
     }
   ]
 }

@@ -117,8 +117,9 @@
 <div class="page-head wrap">
   <p class="eyebrow mono">Guía de especies</p>
   <h1>Identifica y consulta la ficha</h1>
-  <p class="lede" id="ledeCount">Especies habituales en España, más algunas aves exóticas que se encuentran con frecuencia. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.</p>
+  <p class="lede" id="ledeCount">Especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.</p>
   <p class="sugerir-guia">¿Falta tu ave o ves algo mejorable? <a href="mailto:contacto@avecaida.com?subject=Sugerencia%20de%20especie%20para%20AveCa%C3%ADda&amp;body=Especie%20o%20dato%3A%0A%0AD%C3%B3nde%20la%20vi%20(provincia)%3A%0A%0ASi%20puedes%2C%20adjunta%20una%20foto.">Propón una especie</a>.</p>
+  <p class="sugerir-guia">¿Has encontrado un loro, una cotorra o un periquito? Mira la <a href="exoticas.html">guía de loros y cotorras</a>: no son aves silvestres de España y se tratan de otra forma.</p>
 </div>
 
 <main class="wrap layout" id="contenido">
@@ -162,11 +163,11 @@ async function cargarEspecies() {
     const res = await fetch('especies.json');
     if (!res.ok) throw new Error('No se pudo cargar especies.json');
     const data = await res.json();
-    ESPECIES = data.especies;
+    ESPECIES = data.especies.filter(e => e.grupo !== 'exoticas');
     renderList(ESPECIES);
 
     document.getElementById('ledeCount').textContent =
-      `${ESPECIES.length} especies (habituales en España y algunas aves exóticas frecuentes). Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.`;
+      `${ESPECIES.length} especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.`;
     document.getElementById('footerCount').textContent =
       `${ESPECIES.length} de 638 especies catalogadas en España — ampliación en curso`;
 
