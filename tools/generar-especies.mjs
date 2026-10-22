@@ -127,6 +127,7 @@ const CSS = `  .esp-wrap { max-width: 820px; padding-bottom: 60px; }
   .mapa-estado { color: var(--ink); font-weight: 600; }
   .mapa-nota { font-size: 0.82rem !important; }
   @media (max-width: 560px) { .mapa-esp { flex-direction: column; align-items: flex-start; } .mapa-esp svg { width: 100%; max-width: 320px; } }
+  .sugerir { margin-top: 26px; font-size: 0.92rem; }
   .otras { display: flex; gap: 8px; flex-wrap: wrap; }
   .otras a { text-decoration: none; background: var(--moss-soft); color: var(--primary); padding: 6px 13px; border-radius: 20px; font-size: 0.88rem; font-weight: 600; }
   .otras a:hover, .otras a:focus-visible { background: var(--primary); color: #fff; }`;
@@ -204,6 +205,11 @@ ${HEADER}
     <p>Muchas aves que parecen abandonadas no necesitan ayuda: antes de recogerla, usa el <a href="/checklist.html">checklist</a> para comprobar si de verdad la necesita. Si está herida o enferma, lo correcto es llevarla a un centro de recuperación (CRAS). Un ave silvestre no es una mascota y, por ley, no puedes quedártela. Esta ficha es orientativa y no sustituye a un profesional.</p>
   </div>
 
+  ${e.aviso ? `<div class="caja warn">
+    <h2>${esc(e.aviso.titulo)}</h2>
+    <p>${esc(e.aviso.texto)}</p>
+  </div>` : ''}
+
   ${d ? `<div class="caja cria">
     <h2>¿Está de verdad abandonada? <span class="tag">${TIPO[d.tipo] || ''}</span></h2>
     <p>${esc(d.descripcion)}</p>
@@ -246,6 +252,8 @@ ${HEADER}
     <a href="/identificar.html" class="btn btn-outline">Identificar por foto</a>
     <button type="button" class="btn btn-outline share-btn" data-title="${esc(title)}" data-text="${n}: qué hacer y cuándo llevarla a un CRAS, en AveCaída." data-url="${url}" aria-expanded="false">Compartir</button>
   </div>
+
+  <p class="sugerir">¿Falta alguna especie o ves un dato mejorable? <a href="mailto:contacto@avecaida.com?subject=${encodeURIComponent('Sugerencia sobre la ficha: ' + e.nombre_comun)}">Cuéntanoslo</a>.</p>
 
   ${otras.length ? `<h2>Otras especies de ${esc(e.familia.toLowerCase())}</h2>
   <div class="otras">${otras.map(o => `<a href="/especies/${o.id}.html">${esc(o.nombre_comun)}</a>`).join('')}</div>` : ''}

@@ -2,7 +2,7 @@
   "_meta": {
     "proyecto": "AveCaída",
     "descripcion": "Fichas de especies con guía de cuidados para aves caídas o heridas encontradas en España.",
-    "cobertura": "50 especies habituales en España (fase 1 ampliada). El listado oficial completo (638 especies, SEO/BirdLife) se añadirá como índice ligero en una fase posterior.",
+    "cobertura": "55 especies: 50 habituales en España y 5 psitácidas (2 exóticas invasoras y 3 aves de compañía escapadas). El listado oficial completo (638 especies, SEO/BirdLife) se añadirá como índice ligero en una fase posterior.",
     "ultima_revision": "2026-07-22",
     "aviso": "Esta guía orienta pero no sustituye a un CRAS. Ante heridas graves, sangrado, fracturas visibles o dudas, contacta siempre con un centro de recuperación de fauna silvestre.",
     "distribucion": "Distribución aproximada por comunidades autónomas, a partir de rangos generales de cada especie; orientativa, no un atlas de cría."
@@ -2912,6 +2912,222 @@
           "VAL"
         ]
       }
+    },
+    {
+      "id": "cotorra-argentina",
+      "nombre_comun": "Cotorra argentina",
+      "nombre_cientifico": "Myiopsitta monachus",
+      "familia": "Psitácidos",
+      "dieta": "Granívoro y frugívoro (semillas, frutos, brotes)",
+      "estado_conservacion": "Especie exótica invasora en España (originaria de Sudamérica)",
+      "aviso": {
+        "titulo": "Especie exótica invasora",
+        "texto": "La cotorra argentina no es un ave silvestre autóctona. Según nuestra información, figura en el Catálogo español de especies exóticas invasoras (Real Decreto 630/2013), por lo que no debe liberarse ni mantenerse como mascota, y cada comunidad gestiona los ejemplares de forma distinta. Antes de moverla, llama a tu CRAS o al servicio de medio ambiente de tu comunidad (o al 112 si hay peligro) y pregunta cómo proceder. Ficha pendiente de revisión por un profesional."
+      },
+      "papilla": {
+        "categoria_comercial": "Papilla comercial para loros (psitácidas); consulta con el CRAS o un veterinario de aves",
+        "receta_emergencia": "No improvises recetas caseras: ofrece agua y, solo si está activa y alerta, un poco de fruta o semillas. Consulta cuanto antes.",
+        "frecuencia_implume": "Según el producto comercial y la edad: pregunta al CRAS o a un veterinario de aves",
+        "frecuencia_juvenil_plumado": "Comida variada (semillas, fruta, verdura) disponible a lo largo del día, si está activa y alerta"
+      },
+      "medidas": {
+        "peso_adulto_g": [
+          100,
+          140
+        ],
+        "envergadura_cm": [
+          45,
+          50
+        ]
+      },
+      "identificacion": {
+        "rasgos": "Verde con frente, mejillas y pecho gris claro, pico curvo y robusto y cola larga. Vive en grupos ruidosos y construye nidos grandes de ramas en palmeras, pinos y postes.",
+        "confundible_con": [
+          "Cotorra de Kramer",
+          "Periquito común"
+        ]
+      },
+      "cuando_derivar_cras": "Herida, ala caída, sangrado o pollo caído del nido. Al ser una especie invasora, llama antes a tu CRAS o servicio de medio ambiente para saber cómo gestionarla.",
+      "imagen": "assets/aves/cotorra-argentina.jpg",
+      "desarrollo": {
+        "tipo": "nidicola",
+        "descripcion": "Nidícola: los pollos nacen sin plumas en grandes nidos comunales de ramas. Se caen sobre todo con temporales, podas o al retirar nidos.",
+        "que_hacer": "No intentes criarla en casa ni la sueltes en otro sitio. Si es un pollo caído, o está herida, llama a tu CRAS o al servicio de medio ambiente del ayuntamiento."
+      },
+      "distribucion": {
+        "presencia": "Residente (introducida), sobre todo en ciudades",
+        "ccaa": [
+          "AND",
+          "BAL",
+          "CAT",
+          "CNR",
+          "MAD",
+          "VAL"
+        ]
+      }
+    },
+    {
+      "id": "cotorra-de-kramer",
+      "nombre_comun": "Cotorra de Kramer",
+      "nombre_cientifico": "Psittacula krameri",
+      "familia": "Psitácidos",
+      "dieta": "Granívoro y frugívoro (semillas, frutos, brotes)",
+      "estado_conservacion": "Especie exótica invasora en España (originaria de África y Asia)",
+      "aviso": {
+        "titulo": "Especie exótica invasora",
+        "texto": "La cotorra de Kramer no es un ave silvestre autóctona. Según nuestra información, figura en el Catálogo español de especies exóticas invasoras (Real Decreto 630/2013), por lo que no debe liberarse ni mantenerse como mascota, y cada comunidad gestiona los ejemplares de forma distinta. Antes de moverla, llama a tu CRAS o al servicio de medio ambiente de tu comunidad (o al 112 si hay peligro) y pregunta cómo proceder. Ficha pendiente de revisión por un profesional."
+      },
+      "papilla": {
+        "categoria_comercial": "Papilla comercial para loros (psitácidas); consulta con el CRAS o un veterinario de aves",
+        "receta_emergencia": "No improvises recetas caseras: ofrece agua y, solo si está activa y alerta, un poco de fruta o semillas. Consulta cuanto antes.",
+        "frecuencia_implume": "Según el producto comercial y la edad: pregunta al CRAS o a un veterinario de aves",
+        "frecuencia_juvenil_plumado": "Comida variada (semillas, fruta, verdura) disponible a lo largo del día, si está activa y alerta"
+      },
+      "medidas": {
+        "peso_adulto_g": [
+          95,
+          140
+        ],
+        "envergadura_cm": [
+          42,
+          48
+        ]
+      },
+      "identificacion": {
+        "rasgos": "Verde brillante con pico rojo y cola muy larga. El macho adulto tiene un anillo negro y rosado en el cuello. Hace nidos en huecos de árboles y edificios.",
+        "confundible_con": [
+          "Cotorra argentina",
+          "Periquito común"
+        ]
+      },
+      "cuando_derivar_cras": "Herida, ala caída, sangrado o pollo caído del nido. Al ser una especie invasora, llama antes a tu CRAS o servicio de medio ambiente para saber cómo gestionarla.",
+      "imagen": "assets/aves/cotorra-de-kramer.jpg",
+      "desarrollo": {
+        "tipo": "nidicola",
+        "descripcion": "Nidícola: los pollos nacen sin plumas en huecos de árboles o edificios y dependen de los padres hasta que echan a volar.",
+        "que_hacer": "No intentes criarla en casa ni la sueltes en otro sitio. Si es un pollo caído, o está herida, llama a tu CRAS o al servicio de medio ambiente del ayuntamiento."
+      },
+      "distribucion": {
+        "presencia": "Residente (introducida), sobre todo en ciudades",
+        "ccaa": [
+          "AND",
+          "CAT",
+          "CNR",
+          "MAD",
+          "VAL"
+        ]
+      }
+    },
+    {
+      "id": "periquito-comun",
+      "nombre_comun": "Periquito común",
+      "nombre_cientifico": "Melopsittacus undulatus",
+      "familia": "Psitácidos",
+      "dieta": "Granívoro (mezcla de semillas para periquitos)",
+      "estado_conservacion": "Ave de compañía (no es una especie silvestre en España)",
+      "aviso": {
+        "titulo": "Probablemente es una mascota escapada",
+        "texto": "No es un ave silvestre de España: casi seguro se ha escapado de un hogar. Comprueba si lleva anilla, avisa en grupos locales de animales perdidos, protectoras y veterinarios de tu zona, y mientras tanto mantenla en una habitación tranquila y templada, sin corrientes, con agua fresca y comida adecuada. Si es un periquito sano y se deja coger, un veterinario o una protectora pueden ayudarte a localizar a su dueño. Ficha pendiente de revisión por un profesional."
+      },
+      "papilla": {
+        "categoria_comercial": "Adulto de mascota: no necesita papilla. Mezcla de semillas específica para su especie.",
+        "receta_emergencia": "Mezcla de semillas para su especie, agua fresca y un poco de verdura de hoja lavada. No des pan, leche ni comida de personas.",
+        "frecuencia_implume": "Si es un pollo sin plumas: llévalo a un veterinario de animales exóticos; no intentes criarlo en casa.",
+        "frecuencia_juvenil_plumado": "Comida disponible a lo largo del día. Si está esponjada, apática o no come, no insistas: veterinario."
+      },
+      "medidas": {
+        "peso_adulto_g": [
+          25,
+          40
+        ],
+        "envergadura_cm": [
+          30,
+          35
+        ]
+      },
+      "identificacion": {
+        "rasgos": "Pequeño y esbelto, de cola larga. El color varía (verde, azul, amarillo, blanco) y tiene barrado negro en cabeza y alas. La cera sobre el pico es azul en el macho y marrón o beige en la hembra.",
+        "confundible_con": [
+          "Agapornis",
+          "Ninfa"
+        ]
+      },
+      "cuando_derivar_cras": "Si está herida, sangra, está esponjada y apática o no come: veterinario de animales exóticos. Un CRAS solo la recibirá si el centro lo decide, así que llama antes de ir.",
+      "imagen": "assets/aves/periquito-comun.jpg"
+    },
+    {
+      "id": "ninfa",
+      "nombre_comun": "Ninfa",
+      "nombre_cientifico": "Nymphicus hollandicus",
+      "familia": "Psitácidos",
+      "dieta": "Granívoro (mezcla de semillas para ninfas)",
+      "estado_conservacion": "Ave de compañía (no es una especie silvestre en España)",
+      "aviso": {
+        "titulo": "Probablemente es una mascota escapada",
+        "texto": "No es un ave silvestre de España: casi seguro se ha escapado de un hogar. Comprueba si lleva anilla, avisa en grupos locales de animales perdidos, protectoras y veterinarios de tu zona, y mientras tanto mantenla en una habitación tranquila y templada, sin corrientes, con agua fresca y comida adecuada. Si es una ninfa sana y se deja coger, un veterinario o una protectora pueden ayudarte a localizar a su dueño. Ficha pendiente de revisión por un profesional."
+      },
+      "papilla": {
+        "categoria_comercial": "Adulto de mascota: no necesita papilla. Mezcla de semillas específica para su especie.",
+        "receta_emergencia": "Mezcla de semillas para su especie, agua fresca y un poco de verdura de hoja lavada. No des pan, leche ni comida de personas.",
+        "frecuencia_implume": "Si es un pollo sin plumas: llévalo a un veterinario de animales exóticos; no intentes criarlo en casa.",
+        "frecuencia_juvenil_plumado": "Comida disponible a lo largo del día. Si está esponjada, apática o no come, no insistas: veterinario."
+      },
+      "medidas": {
+        "peso_adulto_g": [
+          75,
+          100
+        ],
+        "envergadura_cm": [
+          30,
+          38
+        ]
+      },
+      "identificacion": {
+        "rasgos": "Gris con cara amarilla, mejilla naranja y cresta que sube y baja. Las crías y las hembras tienen colores más apagados y barrado en la cola.",
+        "confundible_con": [
+          "Periquito común",
+          "Agapornis"
+        ]
+      },
+      "cuando_derivar_cras": "Si está herida, sangra, está esponjada y apática o no come: veterinario de animales exóticos. Un CRAS solo la recibirá si el centro lo decide, así que llama antes de ir.",
+      "imagen": "assets/aves/ninfa.jpg"
+    },
+    {
+      "id": "agapornis",
+      "nombre_comun": "Agapornis (inseparable)",
+      "nombre_cientifico": "Agapornis spp. (p. ej. A. roseicollis)",
+      "familia": "Psitácidos",
+      "dieta": "Granívoro (mezcla de semillas para agapornis)",
+      "estado_conservacion": "Ave de compañía (no es una especie silvestre en España)",
+      "aviso": {
+        "titulo": "Probablemente es una mascota escapada",
+        "texto": "No es un ave silvestre de España: casi seguro se ha escapado de un hogar. Comprueba si lleva anilla, avisa en grupos locales de animales perdidos, protectoras y veterinarios de tu zona, y mientras tanto mantenla en una habitación tranquila y templada, sin corrientes, con agua fresca y comida adecuada. Si es un agapornis sano y se deja coger, un veterinario o una protectora pueden ayudarte a localizar a su dueño. Ficha pendiente de revisión por un profesional."
+      },
+      "papilla": {
+        "categoria_comercial": "Adulto de mascota: no necesita papilla. Mezcla de semillas específica para su especie.",
+        "receta_emergencia": "Mezcla de semillas para su especie, agua fresca y un poco de verdura de hoja lavada. No des pan, leche ni comida de personas.",
+        "frecuencia_implume": "Si es un pollo sin plumas: llévalo a un veterinario de animales exóticos; no intentes criarlo en casa.",
+        "frecuencia_juvenil_plumado": "Comida disponible a lo largo del día. Si está esponjada, apática o no come, no insistas: veterinario."
+      },
+      "medidas": {
+        "peso_adulto_g": [
+          45,
+          60
+        ],
+        "envergadura_cm": [
+          24,
+          30
+        ]
+      },
+      "identificacion": {
+        "rasgos": "Pequeño y rechoncho, de cola corta y pico rojizo y grueso. Suele ser verde con la cara rosa o naranja, aunque hay muchas variedades de color.",
+        "confundible_con": [
+          "Periquito común",
+          "Ninfa"
+        ]
+      },
+      "cuando_derivar_cras": "Si está herida, sangra, está esponjada y apática o no come: veterinario de animales exóticos. Un CRAS solo la recibirá si el centro lo decide, así que llama antes de ir.",
+      "imagen": "assets/aves/agapornis.jpg"
     }
   ]
 }

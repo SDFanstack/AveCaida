@@ -52,6 +52,8 @@
   .field-block.warn h4 { color: var(--urgent); }
   .field-block.warn p { color: #7A3325; }
 
+  .sugerir-guia { margin: 6px 0 0; font-size: 0.92rem; }
+  .sugerir-guia a { color: var(--primary); font-weight: 600; }
   .especie-sello {
     width: 110px; height: 140px; object-fit: cover; flex-shrink: 0;
     border: 4px solid #fff; outline: 1px solid var(--line); border-radius: 2px;
@@ -115,7 +117,8 @@
 <div class="page-head wrap">
   <p class="eyebrow mono">Guía de especies</p>
   <h1>Identifica y consulta la ficha</h1>
-  <p class="lede" id="ledeCount">Especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.</p>
+  <p class="lede" id="ledeCount">Especies habituales en España, más algunas aves exóticas que se encuentran con frecuencia. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.</p>
+  <p class="sugerir-guia">¿Falta tu ave o ves algo mejorable? <a href="mailto:contacto@avecaida.com?subject=Sugerencia%20de%20especie%20para%20AveCa%C3%ADda&amp;body=Especie%20o%20dato%3A%0A%0AD%C3%B3nde%20la%20vi%20(provincia)%3A%0A%0ASi%20puedes%2C%20adjunta%20una%20foto.">Propón una especie</a>.</p>
 </div>
 
 <main class="wrap layout" id="contenido">
@@ -163,7 +166,7 @@ async function cargarEspecies() {
     renderList(ESPECIES);
 
     document.getElementById('ledeCount').textContent =
-      `${ESPECIES.length} especies habituales en España, con datos verificados. Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.`;
+      `${ESPECIES.length} especies (habituales en España y algunas aves exóticas frecuentes). Busca por nombre o elige de la lista. El catálogo se amplía poco a poco: si tu ave no está, prueba «Identificar» con una foto o llama a tu CRAS.`;
     document.getElementById('footerCount').textContent =
       `${ESPECIES.length} de 638 especies catalogadas en España — ampliación en curso`;
 
@@ -237,6 +240,12 @@ function showDetail(especie) {
           <span class="tag">${especie.dieta}</span>
           <span class="tag">${especie.estado_conservacion}</span>
         </div>
+
+        ${especie.aviso ? `
+        <div class="field-block warn" style="margin-top:18px;">
+          <h4>${especie.aviso.titulo}</h4>
+          <p>${especie.aviso.texto}</p>
+        </div>` : ''}
 
         <div class="ficha-grid" style="margin-top:22px;">
           <div class="ficha-field">

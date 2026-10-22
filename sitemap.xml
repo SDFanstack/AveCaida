@@ -232,4 +232,24 @@
     <loc>https://avecaida.com/especies/focha-comun.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://avecaida.com/especies/cotorra-argentina.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://avecaida.com/especies/cotorra-de-kramer.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://avecaida.com/especies/periquito-comun.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://avecaida.com/especies/ninfa.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://avecaida.com/especies/agapornis.html</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
